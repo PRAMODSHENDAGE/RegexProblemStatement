@@ -49,5 +49,13 @@ namespace UserRegistration
             bool result = regex.IsMatch(password);
             Console.WriteLine("UC-5: Entered Password is " + result);
         }
+        //UC 6 Password Should have atleast 1 Upper case
+        public const string PASSWORD_CAPITAL_REGEX = "^[A-Z]{1}[a-z0-9]{7,}$";
+        public void PasswordCapital(string passwordcapital)
+        {
+            Regex regex = new Regex(PASSWORD_CAPITAL_REGEX);
+            bool result = regex.IsMatch(passwordcapital);
+            Console.WriteLine("UC-6: Entered Password is " + result);
+        }
     }
 }

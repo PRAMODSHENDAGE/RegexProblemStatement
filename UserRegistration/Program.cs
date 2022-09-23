@@ -21,3 +21,7 @@ user.PhoneNumber(phonenumber);
 Console.WriteLine("\nEnter Password having Minimum 8 Characters: ");
 string password = Console.ReadLine();
 user.Password(password);
+
+Console.WriteLine("\nEnter Password having atleast one Upper Case: ");
+string passwordcapital = Console.ReadLine();
+user.PasswordCapital(passwordcapital);
