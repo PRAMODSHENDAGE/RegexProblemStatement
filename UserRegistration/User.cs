@@ -33,5 +33,13 @@ namespace UserRegistration
             bool result = regex.IsMatch(email);
             Console.WriteLine("UC-3: Entered Email is " + result);
         }
+        //UC 4 Checking for Phone Number Validation
+        public const string PHONENUMBER_REGEX = "^[91]*[ ]*[0-9]{10}$";
+        public void PhoneNumber(string phonenumber)
+        {
+            Regex regex = new Regex(PHONENUMBER_REGEX);
+            bool result = regex.IsMatch(phonenumber);
+            Console.WriteLine("UC-4: Entered Phone Number is " + result);
+        }
     }
 }

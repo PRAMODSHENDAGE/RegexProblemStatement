@@ -13,3 +13,7 @@ user.LastName(lastname);
 Console.WriteLine("\nEnter The Email: ");
 string email = Console.ReadLine();
 user.Email(email);
+
+Console.WriteLine("\nEnter The Phone Number: ");
+string phonenumber = Console.ReadLine();
+user.PhoneNumber(phonenumber);
