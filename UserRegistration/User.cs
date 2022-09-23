@@ -9,7 +9,7 @@ namespace UserRegistration
 {
     internal class User
     {
-        //UC 1 Checkig for First Name Validation
+        //UC 1 - FirstName Start with Cap & has Minimum 3 Characters.
         public const string FIRSTNAME_REGEX = "^[A-Z]{1}[A-Za-z]{2,}$";
         public void FirstName(string firstname)
         {
