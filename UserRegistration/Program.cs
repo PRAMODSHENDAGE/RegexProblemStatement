@@ -29,3 +29,7 @@ user.PasswordCapital(passwordcapital);
 Console.WriteLine("\nEnter Password having atleast one Numeric Value: ");
 string passwordnumeric = Console.ReadLine();
 user.PasswordNumeric(passwordnumeric);
+
+Console.WriteLine("\nEnter Password having Exactly one Special Character: ");
+string passwordspecialcharacter = Console.ReadLine();
+user.PasswordSpecialCharacter(passwordspecialcharacter);
