@@ -17,3 +17,7 @@ user.Email(email);
 Console.WriteLine("\nEnter The Phone Number: ");
 string phonenumber = Console.ReadLine();
 user.PhoneNumber(phonenumber);
+
+Console.WriteLine("\nEnter Password having Minimum 8 Characters: ");
+string password = Console.ReadLine();
+user.Password(password);

@@ -41,5 +41,13 @@ namespace UserRegistration
             bool result = regex.IsMatch(phonenumber);
             Console.WriteLine("UC-4: Entered Phone Number is " + result);
         }
+        //UC 5 Password of Minimum 8 Characters.
+        public const string PASSWORD_REGEX = "^[A-Za-z0-9]{8,}$";
+        public void Password(string password)
+        {
+            Regex regex = new Regex(PASSWORD_REGEX);
+            bool result = regex.IsMatch(password);
+            Console.WriteLine("UC-5: Entered Password is " + result);
+        }
     }
 }
