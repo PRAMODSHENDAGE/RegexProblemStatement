@@ -10,3 +10,6 @@ Console.WriteLine("\nEnter The Last Name: ");
 string lastname = Console.ReadLine();
 user.LastName(lastname);
 
+Console.WriteLine("\nEnter The Email: ");
+string email = Console.ReadLine();
+user.Email(email);

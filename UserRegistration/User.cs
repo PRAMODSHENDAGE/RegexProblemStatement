@@ -25,5 +25,13 @@ namespace UserRegistration
             bool result = regex.IsMatch(lastname);
             Console.WriteLine("UC-2: Entered Last Name is " + result);
         }
+        //UC 3 Checking for Email Validation
+        public const string EMAIL_REGEX = "^[a-z]{3}[.]{1}[0-9a-zA-Z]+[@]{1}[a-z]{2}[.]{1}[a-z]{2}[.]{1}[a-z]{2}$";
+        public void Email(string email)
+        {
+            Regex regex = new Regex(EMAIL_REGEX);
+            bool result = regex.IsMatch(email);
+            Console.WriteLine("UC-3: Entered Email is " + result);
+        }
     }
 }
