@@ -57,5 +57,13 @@ namespace UserRegistration
             bool result = regex.IsMatch(passwordcapital);
             Console.WriteLine("UC-6: Entered Password is " + result);
         }
+        //UC 7 Password Should have atleast 1 Numeric Value
+        public const string PASSWORD_NUMERIC_REGEX = "^[A-Z]{1}[0-9]{1}[a-zA-Z0-9]{6,}$";
+        public void PasswordNumeric(string passwordnumeric)
+        {
+            Regex regex = new Regex(PASSWORD_NUMERIC_REGEX);
+            bool result = regex.IsMatch(passwordnumeric);
+            Console.WriteLine("UC-7: Entered Password is " + result);
+        }
     }
 }

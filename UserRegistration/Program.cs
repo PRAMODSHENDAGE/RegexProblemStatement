@@ -25,3 +25,7 @@ user.Password(password);
 Console.WriteLine("\nEnter Password having atleast one Upper Case: ");
 string passwordcapital = Console.ReadLine();
 user.PasswordCapital(passwordcapital);
+
+Console.WriteLine("\nEnter Password having atleast one Numeric Value: ");
+string passwordnumeric = Console.ReadLine();
+user.PasswordNumeric(passwordnumeric);
