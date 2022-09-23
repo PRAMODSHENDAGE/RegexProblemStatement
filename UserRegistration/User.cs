@@ -17,5 +17,13 @@ namespace UserRegistration
             bool result = regex.IsMatch(firstname);
             Console.WriteLine("UC-1: Entered First Name is " + result);
         }
+        //UC 2 - LastName Start with Cap & has Minimum 3 Characters.
+        public const string LASTNAME_REGEX = "^[A-Z]{1}[A-Za-z]{2,}$";
+        public void LastName(string lastname)
+        {
+            Regex regex = new Regex(LASTNAME_REGEX);
+            bool result = regex.IsMatch(lastname);
+            Console.WriteLine("UC-2: Entered Last Name is " + result);
+        }
     }
 }
